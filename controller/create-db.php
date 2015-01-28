@@ -6,3 +6,6 @@ $connection = new msqli($host, $username, $password);
 if($connection->connect_erro){
     
 }
+else{
+    echo "sucsess";
+}
