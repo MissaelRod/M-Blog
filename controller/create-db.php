@@ -1,11 +1,27 @@
 <?php
-require_once("../model/database.php");
 
-$connection = new msqli($host, $username, $password);
+require_once(__DIR__ . "/../model/database.php");
 
-if($connection->connect_erro){
-    
+$connection = new mysqli($host, $username, $password);
+
+if ($connection->connect_error) {
+    die("Error: " . $connection->connect_error);
+} else {
+    echo "sucsess: " . $connection->host_info;
 }
-else{
-    echo "sucsess";
+
+$exists = $connection->select_db($database);
+
+if(!$exists) {
+  $query = $connection->query("CREATE DATABASE $database"); 
+  
+  if($query){
+     echo "Successfully created database" . $database; 
+  }
 }
+else {
+    echo "database has already exists.";
+}
+
+
+$connection->close();
