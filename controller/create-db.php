@@ -11,7 +11,9 @@ require_once(__DIR__ . "/../model/config.php");
 if ($query) {
     echo "<p>succesfully created table: posts</p>";
 } else {
-
     echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
 
+$query = $_SESSION["conection"]->query("CREATE TABLE users ("
+        . "id int(11)NOT NULL AUTO_INCREMENT,"
+        . "");
