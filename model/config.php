@@ -3,7 +3,6 @@
 require_once(__DIR__ . "/database.php");
 session_start();
     $path = "/M-Blog/";
-
     $host = "localhost";
     $username = "root";
     $password = "root";
