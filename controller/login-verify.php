@@ -2,15 +2,13 @@
 
 require_once(__DIR__ . "/../model/config.php");
 
-function authenticateUser(){
-    if(!isset($_SESSION["authenticated"])){
-     return false;   
-    }
-    else {
-        if($_SESSION["authenticated"] != true){
+function authenticateUser() {
+    if (!isset($_SESSION["authenticated"])) {
         return false;
-        }
-        else {
+    } else {
+        if ($_SESSION["authenticated"] != true) {
+            return false;
+        } else {
             return true;
         }
     }
