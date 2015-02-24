@@ -6,6 +6,7 @@ require_once (__DIR__ . "/../model/config.php");
 
 <form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">
     <div>
+       <!--puts the titles for the email, username,and password-->
         <lable for="email">Email: </lable>
         <input type="text" name="email" />
     </div>
@@ -21,6 +22,7 @@ require_once (__DIR__ . "/../model/config.php");
     </div>
     
     <div>
+        <!--adds a submit button to the register page-->
         <button type="submit">Submit</button>
     </div>
 </form>

@@ -3,7 +3,7 @@
 require_once(__DIR__ . "/database.php");
 session_start();
 session_regenerate_id(true);
-
+//creates multiple pathes
 $path = "/M-Blog/";
 $host = "localhost";
 $username = "root";

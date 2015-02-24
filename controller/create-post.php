@@ -10,5 +10,6 @@ require_once(__DIR__ . "/../model/config.php");
 if ($query) {
     echo "<p>successfully inserted post: $title</p>";
 } else {
+    //checks for any errors when run the program 
     echo "<p>" . $connection->error . "</p>";
 }

@@ -3,10 +3,12 @@ require_once(__DIR__ . "/../controller/login-verify.php");
 require_once (__DIR__ . "/../model/config.php");
 
 if (!authenticateUser()) {
+    //authenticates user
     header("Location: " . $path . "index.php");
     die();
 }
 ?>
+<!--gives the title to the page-->
 <h1>Create Blog Post</h1>
 
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">

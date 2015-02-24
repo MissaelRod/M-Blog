@@ -1,6 +1,6 @@
 
 <?php
-
+//links the data from one page to the other so data is only needed in a couple pages 
 require_once(__DIR__ . "/controller/login-verify.php");
 require_once(__DIR__ . "/view/header.php");
 if (authenticateUser()) {

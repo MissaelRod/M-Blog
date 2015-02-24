@@ -6,6 +6,7 @@ require_once (__DIR__ . "/../model/config.php");
 
 <form method="post" action="<?php echo $path . "controller/login-user.php"; ?>">
     <div>
+        <!--creates a lable for the username, password and, submit-->
         <lable for="username">Username: </lable>
         <input type="text" name="username" />
     </div>
