@@ -1,0 +1,13 @@
+html { 
+    background: url('http://bestgameswallpapers.com/wp-content/uploads/2014/08/assassins-creed-symbol-wallpaper-169181-gameswallpaperhd-aapgfwbv.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+}
+
+button{
+    background-color:gray; 
+    font-style:italic;
+}

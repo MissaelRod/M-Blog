@@ -2,8 +2,8 @@
 require_once(__DIR__ . "/../model/config.php")
 ?>
 <nav>
-    <ul>
+    <ul class="blog">
         <!--give a title to the page-->
-        <li><a href="<?php echo $path . "post.php"?>">Blog Post Form</a></li>
+        <li><button><a href="<?php echo $path . "post.php"?>">Blog Post Form</a></button></li>
     </ul>
 </nav>

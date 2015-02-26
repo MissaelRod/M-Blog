@@ -20,3 +20,4 @@ if ($query->num_rows == 1) {
        } else {
         echo "<p>ACCESS FORBIDDEN!,Invalid username and password<p>";
     }
+?>
